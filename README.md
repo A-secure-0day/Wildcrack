@@ -15,7 +15,8 @@
 
 <h3>Version 1.0 Wildcrack</h3>
 
-- ` ┌─[Linux]─[07:18:24 PM]─[~]
+```bash
+    ┌─[Linux]─[07:18:24 PM]─[~]
     └─╼ $ ./wildcrack --help
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⢀⣠⠴⢞⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -48,9 +49,7 @@ Usage: ./wildcrack  [OPTIONS]
 Options:
 --help          Display this help information
 --version       Display program version
-
-`
-
+```
 
 <h1>🔰 Installation And Requirements 🔰</h1>
 

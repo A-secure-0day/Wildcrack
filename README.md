@@ -31,7 +31,8 @@ git clone https://github.com/A-secure-0day/Wildcrack
 ```bash
 cd Wildcrack && chmod +x install.sh 
 ```
-<h5>If lolcat Not Installed On System And If In termux not installing use pip install lolcat OK for only on termux </h5>
+<h5>If lolcat Not Installed On System And If In termux not installing use pip install lolcat OK for only on termux</h5>
+
 ```bash
 apt install lolcat 
 ```
@@ -39,4 +40,5 @@ apt install lolcat
 ```bash
 ./install
 ```
-<h6> all packages is successfully required after that program will run type on terminal "wildcrack" command</h6>
+
+<h6>all packages is successfully required after that program will run type on terminal "wildcrack" command</h6>

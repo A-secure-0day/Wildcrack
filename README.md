@@ -3,7 +3,10 @@
 ![8Sq345e8hk (5)~2](https://github.com/A-secure-0day/Wildcrack/assets/160304980/6ca75b2b-d196-4189-bbbd-2bd74d2962ac)
 
 <h3>What Is Wildcrack And What is The Use</h3>
+
 <h4>wildcrack tool used to recover the password of the PDF and zip files </h4>
+
+![images](https://github.com/A-secure-0day/Wildcrack/assets/160304980/364f1a30-bdc4-426e-bbb3-696763bfaf8c)
 
 <h2>This Project Test On</h2>
 
@@ -45,7 +48,7 @@
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣤⡀⠀⠀⠀⠀⠀⠀⠈⠛⠿⢿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠳⠦⠄⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
-Usage: ./wildcrack  [OPTIONS]
+Usage: wildcrack  [OPTIONS]
 Options:
 --help          Display this help information
 --version       Display program version

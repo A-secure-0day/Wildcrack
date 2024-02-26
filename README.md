@@ -62,11 +62,13 @@ Options:
 
 <img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/step-1.png"/>
 
+
 ```bash
 apt update && apt upgrade -y
 ```
 
 <img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/step-2.png"/>
+
 
 ```bash
 apt install git -y
@@ -74,16 +76,19 @@ apt install git -y
 
 <img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/step-3.png"/>
 
+
 ```bash
 git clone https://github.com/A-secure-0day/Wildcrack
 ```
 
 <img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/step-4.png"/>
 
+
 ```bash
 cd Wildcrack && chmod +x install.sh 
 ```
 <img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/step-5.png"/>
+
 
 <h5>If in Termux lolcat not Install with apt use pip install lolcat Only for termux</h5>
 
@@ -92,6 +97,7 @@ apt install lolcat
 ```
 
 <img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/step-6.png"/>
+
 
 ```bash
 ./install.sh 

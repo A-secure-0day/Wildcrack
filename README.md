@@ -96,8 +96,21 @@ cd Wildcrack && chmod +x install.sh
 apt install lolcat 
 ```
 
+<h5>Kali Linux , Parrot os , Ubuntu, etc...</h5>
+
+```bash
+sudo apt-get install lolcat -y
+```
+
 <img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/step-6.png"/>
 
+<h5>Kali Linux,  Ubuntu , Debian , Parrot os , etc...</h5>
+
+```bash
+sudo ./install.sh 
+```
+
+<h5>Termux Android</h5>
 
 ```bash
 ./install.sh 

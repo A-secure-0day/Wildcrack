@@ -8,7 +8,7 @@
 
 ![20240218_124414](https://github.com/A-secure-0day/Wildcrack/assets/160304980/4df3d894-a57d-4502-9685-b1de5daf2627) 
 
-### 📢 Warning
+<h1 align="center">📢 Warning</h1>
 
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
 

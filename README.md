@@ -20,7 +20,7 @@
 * `Parrot`
 * `Termux`
 
-<h3>Version 2.0 Wildcrack</h3>
+<h3>Version 3.0 Wildcrack</h3>
 
 ```bash
     ┌─[Linux]─[07:18:24 PM]─[~]

@@ -20,7 +20,7 @@
 * `Parrot`
 * `Termux`
 
-<h3>Version 3.0 Wildcrack</h3>
+<h3>Version 4.O Wildcrack</h3>
 
 ```bash
     ┌─[Linux]─[07:18:24 PM]─[~]
@@ -96,7 +96,16 @@ cd Wildcrack && chmod +x install.sh
 apt install lolcat 
 ```
 
+```bash
+./install.sh 
+```
+
+
 <h5>Kali Linux , Parrot os , Ubuntu, etc...</h5>
+
+```bash
+sudo apt-get update && apt-get upgrade -y
+```
 
 ```bash
 sudo apt-get install lolcat -y
@@ -104,16 +113,9 @@ sudo apt-get install lolcat -y
 
 <img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/step-6.png"/>
 
-<h5>Kali Linux,  Ubuntu , Debian , Parrot os , etc...</h5>
 
 ```bash
 sudo ./install.sh 
-```
-
-<h5>Termux Android</h5>
-
-```bash
-./install.sh 
 ```
 
 <h5>all packages is successfully required after that program will run type on terminal "wildcrack" command</h5>

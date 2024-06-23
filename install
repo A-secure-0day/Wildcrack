@@ -1,0 +1,262 @@
+#!/bin/bash
+R="\033[1;31m"
+G="\033[1;32m"
+AY="\033[1;33m"
+PU="\033[1;34m"
+PI="\033[1;35m"
+B="\033[1;36m"
+BW="\033[1;37m"
+Gold="\033[1;38;5;220m"
+Purple="\033[38;5;93m"
+SkyBlue="\e[38;5;111m"
+X="\033[38;5;203m"
+# DISCAMIER
+Banner() {
+  echo -e "\033[1;31m"
+  echo -e "\t██████╗ ██╗███████╗ ██████╗ █████╗ ██╗███╗   ███╗███████╗██████╗"
+  echo -e "\t██╔══██╗██║██╔════╝██╔════╝██╔══██╗██║████╗ ████║██╔════╝██╔══██╗"
+  echo -e "\t██║  ██║██║███████╗██║     ███████║██║██╔████╔██║█████╗  ██████╔╝"
+  echo -e "\t██║  ██║██║╚════██║██║     ██╔══██║██║██║╚██╔╝██║██╔══╝  ██╔══██╗"
+  echo -e "\t██████╔╝██║███████║╚██████╗██║  ██║██║██║ ╚═╝ ██║███████╗██║  ██║"
+  echo -e "\t╚═════╝ ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝\n\n"
+  echo -e "\t\t${Y}Code ${W}By ${Purple}Manjunath\n\n"
+  echo -e "\t${G}It only for pentester and cyber security . " | pv -qL 60
+  echo -e "\t${G}Don't use for Malaysia purpose and this tool ." | pv -qL 60
+  echo -e "\t${G}And this repository not responsible for that any illegal activity . And use on your Risk " | pv -qL 60
+  for ((i=1; i<=5; i++)) do
+  echo
+  done
+  sleep 3
+}
+
+# Show Banner For User
+banner(){
+  echo -e "\t${G}⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀ ⣠⠴⢞⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⣲⣿⡄⢀⡴⠋⣠⣾⣿⣿⣿⣿⣄⣀⣀⡀⠀⠀⠀⠀⠈⠓⠲⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⣼⣿⣿⣿⡟⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣶⣦⣄⡀⠀⠀⠙⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠊⠉⠀⠀⠈⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣄⡉⠛⢿⣷⣄⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⣀⡀⠤⠐⠒⡁⢴⣤⣤⡀⠀⠀⠀⣠⣼⣿⣿⣏⣀⣀⠀⠉⠛⢿⣿⣿⣿⣿⣿⣷⣄⠙⢿⣷⣄⠀⠀⠹⡄⠀⠀⠀⠀⠀"
+  echo -e "\t⢰⣦⣍⣁⠀⠀⠀⠀⠀⠀⢾⡉⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⢸⣿⣿⣿⣿⣿⣿⣷⡄⢻⣿⣆⠀⠀⠑⠀⠀⠀⠀⠀"
+  echo -e "\t⠈⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠁⠁⠀⠀⠀⠀⢹⣿⣿⣿⣿⣿⣿⡿⠋⢀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⢻⣿⡄⠀⠀ ⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⡻⢿⣿⣷⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣎⣿⣷⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⢀⠀⠀⠀⠀⠀⠀⠀  ⠀ ⣠⣶⠀⣠⣾⣿⣿⣿⣿⣦⡉⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣇⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⢹⠁⠰⠉⠉⠒⢄⣸⡷⠿⠛⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⢿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⢇⡇⠀⠀⠀⠘⠁ ⠀⠀ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠈⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠁⠀⠀⠀⠀⠀ ⠀⠀ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣯⠻⢿⣿⣿⣿⣷⣶⡆"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀  ⠀ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⢀⣿⣿⣿⣷⣶⣶⣾⣿⡿⠟⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀ ⢰  ⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⣼⣿⣿⣿⣿⣿⡍⠁⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⢀⠞⡄⠀⠀⢠⣿⣣⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⠏⣼⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⢸⣀⣇⠠⠔⢫⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢫⣾⣿⣿⣿⡿⢣⣿⣿⡇⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠰⡀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⠟⢁⣾⣿⣿⠁⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠑⡄⢸⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢁⣴⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠈⠚⠉⠉⠁⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢛⣉⣤⣶⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⠟⡇⠈⣿⣿⣿⣿⣿⣿⣿⣿⣶⣾⣿⣿⣿⣿⣿⡿⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣⠀⠹⣿⣿⣿⣿⣿⡏⠀⣿⡀⢻⣿⣿⣿⣿⣿⣿⠟⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⡀⠈⠻⣿⣿⣿⡇⠀⠸⣷⡀⢿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⣄⠀⠈⠙⠿⣿⡄⠀⠘⢿⣦⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣤⡀⠀⠀⠀⠀⠀⠀⠈⠛⠿⢿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠳⠦⠄⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n"
+}
+font() {
+echo "
+░██╗░░░░░░░██╗██╗██╗░░░░░██████╗░░█████╗░██████╗░░█████╗░░█████╗░██╗░░██╗
+░██║░░██╗░░██║██║██║░░░░░██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║░██╔╝
+░╚██╗████╗██╔╝██║██║░░░░░██║░░██║██║░░╚═╝██████╔╝███████║██║░░╚═╝█████═╝░
+░░████╔═████║░██║██║░░░░░██║░░██║██║░░██╗██╔══██╗██╔══██║██║░░██╗██╔═██╗░
+░░╚██╔╝░╚██╔╝░██║███████╗██████╔╝╚█████╔╝██║░░██║██║░░██║╚█████╔╝██║░╚██╗
+░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝
+"
+}
+LOGS_FOLDER=$PWD/logs 
+ILOG=$LOGS_FOLDER/Install.logs 
+mkdir -p $LOGS_FOLDER
+inside() {
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" 		>> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⢀⣠⠴⢞⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⣲⣿⡄⢀⡴⠋⣠⣾⣿⣿⣿⣿⣄⣀⣀⡀⠀⠀⠀⠀⠈⠓⠲⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠎⣼⣿⣿⣿⡟⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣶⣦⣄⡀⠀⠀⠙⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⡿⠊⠉⠀⠀⠈⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣄⡉⠛⢿⣷⣄⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⣀⡀⠤⠐⠒⡁⢴⣤⣤⡀⠀⠀⠀⣠⣼⣿⣿⣏⣀⣀⠀⠉⠛⢿⣿⣿⣿⣿⣿⣷⣄⠙⢿⣷⣄⠀⠀⠹⡄⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⢰⣦⣍⣁⠀⠀⠀⠀⠀⠀⢾⡉⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⢸⣿⣿⣿⣿⣿⣿⣷⡄⢻⣿⣆⠀⠀⠑⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠈⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠁⠁⠀⠀⠀⠀⢹⣿⣿⣿⣿⣿⣿⡿⠋⢀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⢻⣿⡄⠀⠀⠁⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⡻⢿⣿⣷⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣎⣿⣷⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⢀⠀⠀⠀⠀⠀⠀⠀ ⠀⢀⣠⣶⠀⣠⣾⣿⣿⣿⣿⣦⡉⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣇⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⢹⠁⠰⠉⠉⠒⢄⣸⡷⠿⠛⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⢿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⢇⡇⠀⠀⠀⠘⠁ ⠀⠀ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠈⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠁⠀⠀⠀⠀⠀ ⠀⠀ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣯⠻⢿⣿⣿⣿⣷⣶⡆" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀     ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⢀⣿⣿⣿⣷⣶⣶⣾⣿⡿⠟⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀ ⠀⢰ ⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⣼⣿⣿⣿⣿⣿⡍⠁⠀⠀⠀⠀"  >> "${ILOG}"
+  echo -e "\t⠀⠀⢀⠞⡄⠀⠀⢠⣿⣣⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⠏⣼⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⢸⣀⣇⠠⠔⢫⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢫⣾⣿⣿⣿⡿⢣⣿⣿⡇⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠰⡀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⠟⢁⣾⣿⣿⠁⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠑⡄⢸⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢁⣴⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠈⠚⠉⠉⠁⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢛⣉⣤⣶⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⠟⡇⠈⣿⣿⣿⣿⣿⣿⣿⣿⣶⣾⣿⣿⣿⣿⣿⡿⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣⠀⠹⣿⣿⣿⣿⣿⡏⠀⣿⡀⢻⣿⣿⣿⣿⣿⣿⠟⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⡀⠈⠻⣿⣿⣿⡇⠀⠸⣷⡀⢿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⣄⠀⠈⠙⠿⣿⡄⠀⠘⢿⣦⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣤⡀⠀⠀⠀⠀⠀⠀⠈⠛⠿⢿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" >> "${ILOG}"
+  echo -e "\t⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠳⠦⠄⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n\n" >> "${ILOG}"
+  echo -e "\n---------------------------------------------------------------------------------➤\n" >> "$ILOG"
+  echo -e "\t░██╗░░░░░░░██╗██╗██╗░░░░░██████╗░░█████╗░██████╗░░█████╗░░█████╗░██╗░░██╗" >> "${ILOG}"
+  echo -e "\t░██║░░██╗░░██║██║██║░░░░░██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║░██╔╝" >> "${ILOG}"
+  echo -e "\t░╚██╗████╗██╔╝██║██║░░░░░██║░░██║██║░░╚═╝██████╔╝███████║██║░░╚═╝█████═╝░" >> "${ILOG}"
+  echo -e "\t░░████╔═████║░██║██║░░░░░██║░░██║██║░░██╗██╔══██╗██╔══██║██║░░██╗██╔═██╗░" >> "${ILOG}"
+  echo -e "\t░░╚██╔╝░╚██╔╝░██║███████╗██████╔╝╚█████╔╝██║░░██║██║░░██║╚█████╔╝██║░╚██╗" >> "${ILOG}"
+  echo -e "\t░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝\n\n" >> "${ILOG}"
+  echo -e "\n\t\tCreated By Manjunath.S\n\n" >> "${ILOG}"
+  echo -e "\n---------------------------------------------------------------------------------➤\n" >> "$ILOG"
+  echo -e "\n\t\thttps://github.com/Dark-Legends/\n" >> "${ILOG}"
+  echo -e "\n\t\thttps://github.com/A-secure-0day\n" >> "${ILOG}"
+  echo -e '\n--------------------\n' >> "$ILOG"
+}
+
+Installer() {
+    inside
+    # Function to log start and end times with memory usage
+    log_with_memory() {
+        local message=$1
+        local log_time=$(date +"[%r]==%d/%m/%Y==[%A]")
+        local mem_usage=$(awk '/MemFree/ {printf "%.2f", $2/1024}' /proc/meminfo 2>/dev/null || echo "N/A")
+        echo -e "\n$message : ${log_time} - Memory Free: ${mem_usage} MB\n" >> "$ILOG"
+    }
+
+    status_check() {
+        if [ $? -eq 0 ]; then
+ 	    echo -e "\033[1;37m"
+            echo -e "$1 - ${G}Installed${W}\n"
+        else
+            echo -e "$1 - ${R}Failed!${W}\n"
+        fi
+    }
+
+    install_packages() {
+        local package_manager=$1
+        local package1=$2
+        local package2=$3
+
+        log_with_memory "Start-time"
+	echo -e "=====================\nINSTALLING\n=====================\n" >> "$ILOG"
+        echo -e "Commandline package: $package_manager install $package1" >> "$ILOG"
+        $package_manager install -y $package1 &>> "$ILOG"
+        log_with_memory "End-time"
+        status_check "$package1"
+        echo -e '\n--------------------\n' >> "$ILOG"
+
+        log_with_memory "Start-time"
+        echo -e "Commandline package: $package_manager install $package2" >> "$ILOG"
+        $package_manager install -y $package2 &>> "$ILOG"
+        log_with_memory "End-time"
+        status_check "$package2"
+        echo -e '\n--------------------\n' >> "$ILOG"
+    }
+
+    OS=$(uname -s)
+    case "$OS" in
+        Darwin)
+            install_packages "brew" "qpdf" "p7zip"
+            ;;
+        Linux)
+            if [ -f /etc/debian_version ]; then
+                DISTRO=$(lsb_release -si)
+                case "$DISTRO" in
+                    Ubuntu|Debian)
+                        install_packages "sudo apt-get" "qpdf" "p7zip-full"
+                        ;;
+                    Kali)
+                        install_packages "sudo apt-get" "qpdf" "p7zip-full"
+                        ;;
+                    Parrot)
+                        install_packages "sudo apt-get" "qpdf" "p7zip-full"
+                        ;;
+                    *)
+                        echo -e "\n${R}error : Unsupported Debian-based distribution"
+                        ;;
+                esac
+            elif [ -f /data/data/com.termux/files/usr/bin/apt ]; then
+                install_packages "apt" "qpdf" "p7zip"
+            else
+                echo -e "\n${R}erorr : Unsupported Linux distribution"
+            fi
+            ;;
+        *)
+            echo -e "\n${R}error : Unsupported OS\n"
+            ;;
+    esac
+}
+
+main(){
+  # First Banner Show For User #
+  Banner 
+  # Second Banner Show For User  #
+  banner
+  font
+  echo -e "\n\033[1;38;5;46mInstalling\n"
+  Installer
+  echo -e "${Gold}"
+  # Run A while loop for user 
+  # and ask chmod Permissions for file ok 
+  while true; do
+    read -ep "Allow Permissions For Wildcrack (yes/no) : " input
+
+      if [[ "$input" == "yes" || "$input" == "Yes" ]]; then
+          chmod +x wildcrack
+          break
+      elif [[ "$input" == "no" || "$input" == "No" ]]; then
+          echo -e "\n${R}Permission not allowed for ${W}chmod\n"
+          break
+      else
+          echo -e "\n${R} Error : Enter '${G}yes' ${R}or ${G}'no'${W}\n"
+      fi
+  done
+  # Check the operating system
+  if [ "$(uname)" == "Darwin" ]; then
+      # macOS
+      target_dir="/usr/local/bin/"
+  elif [ -f "/etc/redhat-release" ]; then
+      # Red Hat based distributions [Fedora, CentOS]
+      target_dir="/usr/local/bin/"
+  elif [ -f "/data/data/com.termux/files/home/.termux/termux.properties" ]; then
+      # Termux
+      target_dir="$PREFIX/bin/"
+  elif [ -f "/etc/debian_version" ]; then
+      # Debian based distributions [Debian, Ubuntu, Kali, BackBox.]
+      target_dir="/usr/local/bin/"
+  else
+      # Unsupported operating system
+      echo -e "${R}Error: Unsupported operating system.${W}"
+      exit 1
+  fi
+  # Move the file to the target directory
+  mv wildcrack "$target_dir"
+  # Check if the move was successful
+  if [ $? -eq 0 ]; then
+      echo -e "${G}wildcrack moved to $target_dir successfully.${W}"
+  else
+      echo -e "${R}Error: Failed to move wildcrack to $target_dir.${W}"
+      exit 1
+  fi
+  ######################################################################
+
+  mv wildcrack "$target_dir"
+  # Check if the move was successful
+  if [ $? -eq 0 ]; then
+    echo -e "${G}wildcrack moved to $target_dir successfully.${W}"
+  else
+    echo -e "${R}Error: Failed to move wildcrack to $target_dir.${W}"
+    exit 1
+  fi
+  # Ask user for input
+  read -p "Do you want to move wildcrack to the bin directory? (yes/no): " user_input
+  # Processing input
+  if [[ "$user_input" == "yes" ]]; then
+    move_file "$target_dir"
+  elif [[ "$user_input" == "no" ]]; then
+    echo -e "\n${W}Operation cancelled by the user.\n"
+  else
+    echo -e "${R}Invalid input. Please enter 'yes' or 'no'.${W}"
+    exit 1
+  fi 
+}
+main

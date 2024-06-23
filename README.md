@@ -97,7 +97,7 @@ apt install lolcat
 ```
 
 ```bash
-./install.sh 
+./install
 ```
 
 
@@ -115,7 +115,7 @@ sudo apt-get install lolcat -y
 
 
 ```bash
-sudo ./install.sh 
+sudo ./install
 ```
 
 <h5>all packages is successfully required after that program will run type on terminal "wildcrack" command</h5>
